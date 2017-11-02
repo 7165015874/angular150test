@@ -1,6 +1,9 @@
 image: node
 
 before_script:
+  - apt update
+  - apt upgrade -yqq
+  - apt install rsync -yqq 
   - npm install
 
 cache:
@@ -10,10 +13,9 @@ cache:
 pages:
   script:
     - npm --version
+    - date
     - npm run generate
-    - apt update
-    - apt upgrade -yqq
-    - apt install rsync -yqq  
+    - date 
     - rsync -av dist/ public/
     - ls -a public/
   artifacts:

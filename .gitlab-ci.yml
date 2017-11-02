@@ -11,9 +11,11 @@ pages:
   script:
     - npm --version
     - npm run generate
+    - rsync -av dist/ public/
+    - ls -a public/
   artifacts:
     paths:
-      - dist
+      - public
   only:
     - master
 

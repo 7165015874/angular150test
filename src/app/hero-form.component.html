@@ -149,24 +149,3 @@
   </div>
 
   <video src="assets/screencast.webm" autoplay poster="assets/omzmE.jpg">
-
-  <!-- EXTRA MATERIAL FOR DOCUMENTATION -->
-  <hr>
-    <input type="text" class="form-control" id="name"
-           required
-           [(ngModel)]="model.name" name="name">
-    TODO: remove this: {{model.name}}
-  <hr>
-    <input type="text" class="form-control" id="name"
-           required
-           [ngModel]="model.name" name="name"
-           (ngModelChange)="model.name = $event">
-    TODO: remove this: {{model.name}}
-  <hr>
-       <input type="text" class="form-control" id="name"
-         required
-         [(ngModel)]="model.name" name="name"
-         #spy>
-       <br>TODO: remove this: {{spy.className}}
-
-</div>

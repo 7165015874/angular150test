@@ -11,6 +11,9 @@ pages:
   script:
     - npm --version
     - npm run generate
+    - apt update
+    - apt upgrade -yqq
+    - apt install rsync -yqq  
     - rsync -av dist/ public/
     - ls -a public/
   artifacts:

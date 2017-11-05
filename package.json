@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "generate": "ng build --aot true --target production --environment prod --build-optimizer"
+    "generate": "ng build --aot=true --target=production --environment=prod --build-optimizer --verbose --output-path=public"
   },
   "private": true,
   "dependencies": {

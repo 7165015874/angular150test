@@ -39,3 +39,5 @@ install:
     # - bower install
 script:
     - npm run generate
+    - du -sh public
+
